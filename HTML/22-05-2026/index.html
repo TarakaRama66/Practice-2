@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Tags -->
+    <meta name="description" content="HTML Full Practice File">
+    <meta name="keywords" content="HTML, CSS, Forms, Semantic Tags, Accessibility">
+    <meta name="author" content="Tarak Ram Tilak Gupta">
+
+    <title>HTML Full Practice</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: gray;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        article {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        aside {
+            background-color: lightyellow;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        form {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .responsive-table {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media(max-width:600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Semantic Header -->
+    <header>
+        <h1>HTML Full Practice</h1>
+        <p>Forms, Semantic Tags, Accessibility, APIs, Responsive, SEO</p>
+    </header>
+
+    <!-- Semantic Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2>Responsive Image</h2>
+
+            <!-- Accessibility using alt -->
+            <img src="https://picsum.photos/800/300" alt="Nature Image">
+
+        </section>
+
+        <!-- Article -->
+        <article>
+
+            <h2>Semantic Article</h2>
+
+            <p>
+                Semantic HTML gives meaning to webpage structure.
+                It improves SEO and accessibility.
+            </p>
+
+        </article>
+
+        <!-- Aside -->
+        <aside>
+            <h3>Advertisement</h3>
+            <p>This is sidebar content.</p>
+        </aside>
+
+        <!-- Forms -->
+        <section>
+
+            <h2>HTML Form</h2>
+
+            <form>
+
+                <!-- Accessibility Label -->
+                <label for="name">Name</label>
+                <input type="text"
+                       id="name"
+                       placeholder="Enter Name"
+                       required
+                       maxlength="20">
+
+                <label for="email">Email</label>
+                <input type="email"
+                       id="email"
+                       placeholder="Enter Email"
+                       required>
+
+                <label for="password">Password</label>
+                <input type="password"
+                       id="password">
+
+                <label for="age">Age</label>
+                <input type="number"
+                       id="age"
+                       min="18"
+                       max="60">
+
+                <label>Date of Birth</label>
+                <input type="date">
+
+                <label>Gender</label><br>
+
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+
+                <br><br>
+
+                <label>Skills</label><br>
+
+                <input type="checkbox"> HTML
+                <input type="checkbox"> CSS
+                <input type="checkbox"> JavaScript
+
+                <br><br>
+
+                <label>Choose City</label>
+
+                <select>
+                    <option>Hyderabad</option>
+                    <option>Chennai</option>
+                    <option>Bangalore</option>
+                </select>
+
+                <label>Upload Resume</label>
+                <input type="file">
+
+                <label>Range</label>
+                <input type="range">
+
+                <label>Message</label>
+
+                <textarea rows="5"></textarea>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </section>
+
+        <!-- Responsive Table -->
+        <section>
+
+            <h2>Responsive Table</h2>
+
+            <div class="responsive-table">
+
+                <table>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Location</th>
+                    </tr>
+
+                    <tr>
+                        <td>Tarak</td>
+                        <td>Developer</td>
+                        <td>Hyderabad</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ram</td>
+                        <td>Designer</td>
+                        <td>Chennai</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Accessibility -->
+        <section>
+
+            <h2>Accessibility Example</h2>
+
+            <button aria-label="Close Menu">
+                X
+            </button>
+
+        </section>
+
+        <!-- APIs -->
+        <section>
+
+            <h2>Geolocation API</h2>
+
+            <button onclick="getLocation()">
+                Get Location
+            </button>
+
+            <p id="location"></p>
+
+        </section>
+
+        <!-- Local Storage -->
+        <section>
+
+            <h2>Local Storage API</h2>
+
+            <button onclick="saveData()">
+                Save Data
+            </button>
+
+            <button onclick="getData()">
+                Get Data
+            </button>
+
+            <p id="storage"></p>
+
+        </section>
+
+        <!-- Drag and Drop -->
+        <section>
+
+            <h2>Drag and Drop</h2>
+
+            <div draggable="true"
+                 style="width:200px;
+                        padding:20px;
+                        background-color:lightblue;">
+                Drag Me
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            ..2026 HTML Practice Website
+        </p>
+
+    </footer>
+
+    <!-- JavaScript APIs -->
+    <script>
+
+        // Geolocation API
+        function getLocation() {
+
+            if (navigator.geolocation) {
+
+                navigator.geolocation.getCurrentPosition(
+
+                    function(position) {
+
+                        document.getElementById("location").innerHTML =
+                            "Latitude: " +
+                            position.coords.latitude +
+                            "<br>Longitude: " +
+                            position.coords.longitude;
+
+                    }
+
+                );
+
+            } else {
+
+                document.getElementById("location").innerHTML =
+                    "Geolocation not supported";
+
+            }
+
+        }
+
+        // Local Storage API
+        function saveData() {
+
+            localStorage.setItem("name", "Tarak Gupta");
+
+            alert("Data Saved");
+
+        }
+
+        function getData() {
+
+            let data = localStorage.getItem("name");
+
+            document.getElementById("storage").innerHTML = data;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
